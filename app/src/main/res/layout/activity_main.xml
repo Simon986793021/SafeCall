@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.wind.safecall.activity.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0fd6f9"
+        android:id="@+id/bt_call"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="拨打电话"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0fd6f9"
+        android:id="@+id/bt_addblacknum"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="添加黑名单"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0fd6f9"
+        android:id="@+id/bt_queryblacknum"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="查询黑名单"
+        />
+</LinearLayout>
