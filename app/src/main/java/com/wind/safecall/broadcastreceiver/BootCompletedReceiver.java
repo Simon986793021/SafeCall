@@ -7,8 +7,6 @@ import android.util.Log;
 
 import com.wind.safecall.service.BlackNumService;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by zhangcong on 2017/4/10.

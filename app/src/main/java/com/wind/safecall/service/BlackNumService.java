@@ -79,18 +79,6 @@ public class BlackNumService extends Service {
                 case TelephonyManager.CALL_STATE_OFFHOOK:
                     break;
                 case TelephonyManager.CALL_STATE_IDLE:
-                   // long endTime = System.currentTimeMillis();
-                    //来电一声响
-//                    if(endTime - startTime < 3000){
-//                        //发送通知
-//                        Notification notification = new Notification(android.R.drawable.stat_notify_missed_call, "拦截到来电一声响", System.currentTimeMillis());
-//                        Intent intent = new Intent(getApplicationContext(),BlackNumberListActivity.class);
-//                        intent.putExtra("number", incomingNumber);
-//                        PendingIntent contentIntent = PendingIntent.getActivity(getApplicationContext(), 100, intent, 0);
-//                        notification.setLatestEventInfo(getApplicationContext(), "来电一声响", "拦截到来电一声响", contentIntent);
-//                        notification.flags = Notification.FLAG_AUTO_CANCEL;
-//                        nm.notify(100, notification);
-//                    }
                     break;
 
                 default:
