@@ -35,6 +35,26 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:text="查询黑名单"
+        android:text="查询/删除黑名单"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0fd6f9"
+        android:id="@+id/bt_startService"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="开启黑名单"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0fd6f9"
+        android:id="@+id/bt_stopservice"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="关闭黑名单"
         />
 </LinearLayout>

@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button addblacknumbotton;
     private EditText editText;
     private Button quertblacknumbutton;
+    private Button startButton;
+    private Button stopButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addblacknumbotton.setOnClickListener(this);
         quertblacknumbutton= (Button) findViewById(R.id.bt_queryblacknum);
         quertblacknumbutton.setOnClickListener(this);
-        stService();//开启服务
+        startButton= (Button) findViewById(R.id.bt_startService);
+        startButton.setOnClickListener(this);
+        stopButton= (Button) findViewById(R.id.bt_stopservice);
 
     }
     /*
@@ -68,9 +72,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 queryBlackNum();
                 Log.i(">>>","<<<");
                 break;
+            case R.id.bt_startService:
+                stService();//开启服务
+                Utils.showToast("已经开启黑名单服务",MainActivity.this);
+                break;
+            case R.id.bt_stopservice:
+                spService();
             default:
                 break;
         }
+    }
+
+    private void spService() {
+        Intent intent=new Intent(MainActivity.this,BlackNumService.class);
+        stopService(intent);
     }
 
     private void queryBlackNum() {

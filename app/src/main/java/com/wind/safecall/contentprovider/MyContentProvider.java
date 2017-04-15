@@ -104,7 +104,23 @@ public class MyContentProvider extends ContentProvider {
 
     @Override
     public int delete(@NonNull Uri uri, @Nullable String selection, @Nullable String[] selectionArgs) {
-        return 0;
+        sqLiteDatabase=myOpenHelper.getWritableDatabase();
+        int code=uriMatcher.match(uri);
+        int num=0;
+        switch (code){
+            case 1:
+                num=sqLiteDatabase.delete(Table_name,selection,selectionArgs);
+                break;
+            case 2:
+                long _id = ContentUris.parseId(uri);
+                selection="_id=?";
+                selectionArgs=new String[]{String.valueOf(_id)};
+                num=sqLiteDatabase.delete(Table_name,selection,selectionArgs);
+                break;
+            default:
+                break;
+        }
+        return num;
     }
 
     @Override
