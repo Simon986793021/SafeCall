@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:background="#66ff0000"
         android:gravity="center"
-        android:text="删除" />
+        android:text="@string/delete" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         android:textSize="18sp"
         android:textColor="#f52106"
         android:paddingLeft="15dp"
-        android:text="黑名单"
+        android:text="@string/black_num"
         android:gravity="center_vertical"/>
     <TextView
         android:layout_width="0dp"
@@ -36,7 +36,6 @@
         android:id="@+id/tv_black_num"
         android:textSize="18sp"
         android:textColor="#f52106"
-        android:text="18720783407"
         android:gravity="center_vertical"/>
     </LinearLayout>
 </com.wind.safecall.view.SwipeListLayout>

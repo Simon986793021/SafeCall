@@ -23,7 +23,7 @@
             android:id="@+id/bt_sure"
             android:background="#f52106"
             android:textColor="#fff"
-            android:text="确认"
+            android:text="@string/sure"
             android:textSize="18sp"
             android:layout_marginLeft="15dp"/>
         <Button
@@ -34,7 +34,7 @@
             android:background="#f52106"
             android:textSize="18sp"
             android:textColor="#fff"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_marginRight="15dp"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>

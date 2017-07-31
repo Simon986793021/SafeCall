@@ -6,7 +6,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="请输入您要拨打的电话号码"
+        android:hint="@string/call_note"
         android:id="@+id/et_phonenum"
         android:textSize="18sp"
         />
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:text="拨打电话"
+        android:text="@string/start_call"
         android:textColor="#fff"
         android:id="@+id/bt_makecall"
         android:background="#0fd6f9"/>

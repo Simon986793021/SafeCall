@@ -40,7 +40,6 @@ public class BlackNumActivity extends Activity{
         setContentView(R.layout.activity_black_num);
         activitytitle= (TextView) findViewById(R.id.tv_activity_toolbar_center);
         activitytitle.setText("黑名单");
-
         listview= (ListView) findViewById(R.id.lv_black_num);
 
         back= (TextView) findViewById(R.id.tv_back);

@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startButton= (Button) findViewById(R.id.bt_startService);
         startButton.setOnClickListener(this);
         stopButton= (Button) findViewById(R.id.bt_stopservice);
-
+        stopButton.setOnClickListener(this);
+        Log.i("WIND_Simon","MainActivity");
     }
     /*
     启动服务
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_stopservice:
                 spService();
+                Utils.showToast("已经关闭黑名单服务",MainActivity.this);
             default:
                 break;
         }

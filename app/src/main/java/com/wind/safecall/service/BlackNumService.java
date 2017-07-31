@@ -35,6 +35,7 @@ public class BlackNumService extends Service {
         tm= (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         listener=new MyPhoneStateListener();
         tm.listen(listener,PhoneStateListener.LISTEN_CALL_STATE);
+        Log.i("WIND_Simon","Service");
        // nm= (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
     }
     private final class MyPhoneStateListener extends PhoneStateListener{

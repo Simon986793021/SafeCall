@@ -11,6 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 /**
  * Created by zhangcong on 2017/4/8.
@@ -39,6 +40,7 @@ public class MyContentProvider extends ContentProvider {
     public boolean onCreate() {
         try {
             myOpenHelper=new MyOpenHelper(getContext(),DB_name,null,1);
+            Log.i("WIND_Simon","ContentProvider");
         }
         catch (Exception e)
         {

@@ -17,6 +17,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent){
         Log.i(">>>>>>>>","已经开机");
+        Log.i("WIND_Simon","BroadcastReceiver");
         Intent intent1=new Intent(context, BlackNumService.class);
         context.startService(intent1);
     }

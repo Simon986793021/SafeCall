@@ -15,7 +15,7 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:text="拨打电话"
+        android:text="@string/start_call"
          />
     <Button
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:text="添加黑名单"
+        android:text="@string/add_blacknum"
         />
     <Button
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:text="查询/删除黑名单"
+        android:text="@string/query_blacknum"
         />
     <Button
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:text="开启黑名单"
+        android:text="@string/start_service"
         />
     <Button
         android:layout_width="match_parent"
@@ -55,6 +55,6 @@
         android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:text="关闭黑名单"
+        android:text="@string/stop_service"
         />
 </LinearLayout>
